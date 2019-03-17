@@ -1,0 +1,148 @@
+html { 
+    background:  url(../images/giphy.gif) no-repeat center center fixed; 
+    background-size: cover;
+    height: 800px;
+    background-color: black;
+    color: white;
+  }
+
+.nav {
+    position: absolute;
+    float: left;
+    width: 100%;
+    border: 3px solid black;
+    box-shadow: 0 5px 10px green;
+}  
+
+h1 {
+font-family: 'Share Tech Mono', monospace;
+color: white; 
+size: 600px;
+text-align: center;
+padding: 20px;
+}
+
+/* .row .col-6{
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+} */
+
+.left {
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+	margin: 50px 0 0 40px;
+    padding: 20px;
+    background-color: rgba(10, 10, 10, 0.85) !important;
+    border: 1px solid rgb(5, 104, 21);
+}
+
+.middle {
+    display: inline-block;
+    width: 600px;
+    height: 200px;
+	margin: 50px 8px 5px 8px;
+    padding: 20px;
+    background-color: rgba(10, 10, 10, 0.85) !important;
+    border: 1px solid rgb(5, 104, 21);
+}
+.right {
+    display: inline-block;
+    width:250px;
+    height: 200px;
+	margin: 50px 0 0;
+    padding: 20px;
+    background-color: rgba(10, 10, 10, 0.85) !important;
+    border: 1px solid rgb(5, 104, 21);
+}
+.bottom-left {
+    display: inline-block;
+    width:576px;
+    height: 200px;
+	margin: 10px 10px 0 40px;
+    padding: 20px;
+    background-color: rgba(10, 10, 10, 0.85) !important;
+    border: 1px solid rgb(5, 104, 21);
+}
+
+.bottom-right {
+    display: inline-block;
+    width:576px;
+    height: 200px;
+	margin: 10px 0 0;
+    padding: 20px;
+    background-color: rgba(10, 10, 10, 0.85) !important;
+    border: 1px solid rgb(5, 104, 21);
+}
+.images {
+    height: 90%;
+    margin: auto 10px auto 30px;
+    box-shadow: 0 0 10px 5px green;
+}
+
+#morpheusB {
+    height: 27%;
+    margin: 0 0 0 0;
+    box-shadow: 0 0 10px 5px green;
+    position: absolute;
+    top: 130px;
+    left: 450px;
+    /* z-index: 1 */
+}
+#trinityB {
+    height: 27%;
+    margin: 0 0 0 0;
+    box-shadow: 0 0 10px 5px green;
+    position: absolute;
+    top: 130px;
+    left: 450px;
+    /* z-index: 2 */
+}
+#neoB {
+    height: 27%;
+    margin: 0 0 0 0;
+    box-shadow: 0 0 10px 5px green;
+    position: absolute;
+    top: 130px;
+    left: 450px;
+    z-index: 3
+  }
+  #smithB {
+    height: 27%;
+    margin: 0 0 0 0;
+    box-shadow: 0 0 10px 5px green;
+    position: absolute;
+    top: 130px;
+    left: 760px;
+    z-index: 1
+}
+#sentinelB {
+    height: 27%;
+    margin: 0 0 0 0;
+    box-shadow: 0 0 10px 5px green;
+    position: absolute;
+    top: 130px;
+    left: 760px;
+    z-index: 2
+}
+
+#twinsB {
+    height: 27%;
+    margin: 0 0 0 0;
+    box-shadow: 0 0 10px 5px green;
+    position: absolute;
+    top: 130px;
+    left: 760px;
+    z-index: 3
+  }
+
+
+footer {
+    position: absolute;
+    color: white;
+	bottom: 0;
+    width: 100%;
+    font-size: 12px;
+	text-align: center;
+}
