@@ -37,7 +37,13 @@ padding: 20px;
     background-color: rgba(10, 10, 10, 0.85) !important;
     border: 1px solid rgb(5, 104, 21);
 }
-
+button {
+    font-family: 'Share Tech Mono', monospace;
+    margin-left: 270px;
+    margin-top: 70px;
+    color: green;
+    box-shadow: 0 0px 8px 2px green;
+}
 .middle {
     display: inline-block;
     width: 600px;
