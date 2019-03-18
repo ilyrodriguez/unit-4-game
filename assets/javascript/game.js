@@ -19,7 +19,7 @@ $(document).ready(function() {
         counterAttachPower: 5,
     },
     {
-        name: "Smith",
+        name: "Agent Smith",
         healthPoints: 150,
         attackPower: 100,
         counterAttachPower: 15,
@@ -45,14 +45,15 @@ var villainAttack = "";
 var villainCounter = "";
 
 $("#neoB,#trinityB,#morpheusB,#smithB,#twinsB,#sentinelB").hide();
+$("#neoNameTag,#trinityNameTag,#morpheusNameTag,#smithNameTag,#twinsNameTag,#sentinelNameTag").hide();
 
 function pointsHeroe(){
-    $(".left").text(character[i].name + "Health Points " + character[i].healthPoints);
+    $(".left").text(character[i].name + " Health Points " + character[i].healthPoints);
     heroeHealth= character[i].healthPoints;
     heroeAttack= character[i].attackPower;
 }
 function pointsVillan(){
-    $(".right").text(character[i].name + "Health Points " + character[i].healthPoints);
+    $(".right").text(character[i].name + " Health Points " + character[i].healthPoints);
     villainHealth= character[i].healthPoints;
     villainAttack= character[i].attackPower;
     villainCounter= character[i].counterAttachPower;
@@ -62,16 +63,20 @@ $("#neo").click(function(){
     i=0; pointsHeroe();
     $("#neo").animate({ opacity: "0.5" });
     $("#neoB").show();
+    $("#neoNameTag").show();
     $("#trinity").animate({ opacity: "0.5" });
     $("#morpheus").animate({ opacity: "0.5" });
     $("#trinityB").hide();
     $("#morpheusB").hide();
+    $("#trinityNameTag").hide();
+    $("#morpheusNameTag").hide();
 })
 
 $("#trinity").click(function(){
     i=1; pointsHeroe();
     $("#trinity").animate({ opacity: "0.5" });
     $("#trinityB").show();
+    $("#neoNameTag").show();
     $("#neo").animate({ opacity: "0.5" });
     $("#morpheus").animate({ opacity: "0.5" });
     $("#neoB").hide();
@@ -112,7 +117,10 @@ $("#sentinel").click(function(){
     $("#twins").animate({ opacity: "0.5" });
     $("#twinsB").hide();
     $("#smithB").hide();
-})
+});
 
+$(".attackBtn").click(function(){
+
+})
 
 });
