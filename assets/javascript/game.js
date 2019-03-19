@@ -47,6 +47,7 @@ var villainCounter = "";
 var heroeName = "";
 var villainName = "";
 var counter = 1;
+var fightWon = 0;
 
 $("#neoB,#trinityB,#morpheusB,#smithB,#twinsB,#sentinelB").hide();
 $(".attackBtn").hide();
@@ -67,7 +68,10 @@ function reset() {
     $("#neoB, #trinityB,#morpheusB").hide();
     $("#smithB, #twinsB,#sentinelB").hide();
     $(".attackBtn").hide();
-    // $("#neo,#trinity,#morpheus").animate({ opacity: "1" });
+    $(".left").empty();
+    $(".right").empty();
+    $(".images").show().animate({ opacity: "1"});
+    fightWon= 0;
     // $("#smith,#twins,#sentinel").animate({ opacity: "1" });
     // heroesHealth = "";
     // villainHealth = "";
@@ -116,8 +120,6 @@ $("#smith").click(function(){
     pointsVillan();
     $("#smith").hide();
     $("#smithB").show();
-    $("#twins").animate({ opacity: "0.5" });
-    $("#sentinel").animate({ opacity: "0.5" });
     $("#twinsB").hide();
     $("#sentinelB").hide();
     $(".attackBtn").show();
@@ -128,8 +130,6 @@ $("#twins").click(function(){
     pointsVillan();
     $("#twins").hide();
     $("#twinsB").show();
-    $("#smith").animate({ opacity: "0.5" });
-    $("#sentinel").animate({ opacity: "0.5" });
     $("#smithB").hide();
     $("#sentinelB").hide();
     $(".attackBtn").show();
@@ -140,8 +140,6 @@ $("#sentinel").click(function(){
     pointsVillan();
     $("#sentinel").hide();
     $("#sentinelB").show();
-    $("#smith").animate({ opacity: "0.5" });
-    $("#twins").animate({ opacity: "0.5" });
     $("#twinsB").hide();
     $("#smithB").hide();
     $(".attackBtn").show();
@@ -154,10 +152,14 @@ $(".attackBtn").click(function(){
     }
     else if (parseInt((villainHealth -(heroeAttack * counter))) <= 0) {
         $(".imagesCvillain").hide();
-        alert("Choose another villain");
-        // resetVillain();
+        fightWon++;
+        if (fightWon === 3) {
+            alert ("You Win!");
+            reset();
+        }else {
+            alert("Choose another villain");
+        }
     }
-
     else if (parseInt(heroeHealth - villainCounter) <= 0) {
         alert ("Game Over");
         reset();
