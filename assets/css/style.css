@@ -1,26 +1,26 @@
 html { 
     background:  url(../images/giphy.gif) no-repeat center center fixed; 
     background-size: cover;
-    height: 800px;
+    /* size: 100%; */
     background-color: black;
     color: white;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    font-weight: bold;
   }
 
 .nav {
-    position: absolute;
+    /* position: relative; */
     float: left;
     width: 100%;
     border: 3px solid black;
     box-shadow: 0 5px 10px green;
 }  
 
-h1 {
-font-family: 'Share Tech Mono', monospace;
+/* h1 {
 color: white; 
-size: 600px;
 text-align: center;
-padding: 20px;
-}
+} */
 
 /* .row .col-6{
     float: none;
@@ -30,10 +30,10 @@ padding: 20px;
 
 .left {
     display: inline-block;
-    width: 250px;
+    width: 186px;
     height: 200px;
 	margin: 50px 0 0 40px;
-    padding: 20px;
+    padding: 30px;
     background-color: rgba(10, 10, 10, 0.85) !important;
     border: 1px solid rgb(5, 104, 21);
 }
@@ -47,25 +47,25 @@ button {
 }
 .middle {
     display: inline-block;
-    width: 600px;
+    width: 590px;
     height: 200px;
 	margin: 50px 8px 5px 8px;
-    padding: 20px;
+    padding: 30px;
     background-color: rgba(10, 10, 10, 0.85) !important;
     border: 1px solid rgb(5, 104, 21);
 }
 .right {
     display: inline-block;
-    width:250px;
+    width:186px;
     height: 200px;
 	margin: 50px 0 0;
-    padding: 20px;
+    padding: 30px;
     background-color: rgba(10, 10, 10, 0.85) !important;
     border: 1px solid rgb(5, 104, 21);
 }
 .bottom-left {
     display: inline-block;
-    width:576px;
+    width:540px;
     height: 200px;
 	margin: 10px 10px 0 40px;
     padding: 20px;
@@ -75,7 +75,7 @@ button {
 
 .bottom-right {
     display: inline-block;
-    width:576px;
+    width:540px;
     height: 200px;
 	margin: 10px 0 0;
     padding: 20px;
@@ -84,83 +84,66 @@ button {
 }
 .images {
     height: 90%;
-    margin: auto 10px auto 30px;
+    margin: auto 15px auto 40px;
     box-shadow: 0 0 10px 5px green;
 }
-
-.leftNameTag {
-    height: 10%;
-    /* margin: 5px;; */
-    box-shadow: 0 0 10px 2px green;
-    position: absolute;
-    /* top: 150px; */
-    left: 65px;
-    z-index: 1
-}
-
-.rightNameTag {
-    height: 10%;
-    margin: 5px;;
-    box-shadow: 0 0 10px 2px green;
-    position: absolute;
-    /* top: 150px; */
-    /* left: 65px; */
-    z-index: 1
-}
+/* .imagesBheroe {
+    border: 70px;
+} */
 
 #morpheusB {
     height: 27%;
-    margin: 0 0 0 0;
+    margin: 0 0 0 70px;
     box-shadow: 0 0 10px 5px green;
     position: absolute;
-    top: 130px;
-    left: 450px;
+    /* top: 130px;
+    left: 450px; */
     z-index: 1
 }
 #trinityB {
     height: 27%;
-    margin: 0 0 0 0;
+    margin: 0 0 0 70px;
     box-shadow: 0 0 10px 5px green;
     position: absolute;
-    top: 130px;
-    left: 450px;
+    /* top: 130px;
+    left: 450px; */
     z-index: 2
 }
 #neoB {
     height: 27%;
-    margin: 0 0 0 0;
+    margin: 0 0 0 70px;
     box-shadow: 0 0 10px 5px green;
     position: absolute;
-    top: 130px;
-    left: 450px;
+    /* top: 230px;
+    left: 450px; */
     z-index: 3
   }
   #smithB {
     height: 27%;
-    margin: 0 0 0 0;
+    margin: 0 0 0 80px;
     box-shadow: 0 0 10px 5px green;
     position: absolute;
-    top: 130px;
-    left: 760px;
+    /* top: 130px;
+    left: 760px; */
     z-index: 1
 }
 #sentinelB {
     height: 27%;
-    margin: 0 0 0 0;
+    margin: 0 0 0 80px;
     box-shadow: 0 0 10px 5px green;
     position: absolute;
-    top: 130px;
-    left: 760px;
+    /* top: 130px;
+    left: 760px; */
     z-index: 2
 }
 
 #twinsB {
     height: 27%;
-    margin: 0 0 0 0;
+    margin: 0 0 0 80px;
     box-shadow: 0 0 10px 5px green;
     position: absolute;
-    top: 130px;
-    left: 760px;
+    /* top: 130px;
+    left: 760px; */
     z-index: 3
   }
 
@@ -171,5 +154,6 @@ footer {
 	bottom: 0;
     width: 100%;
     font-size: 12px;
-	text-align: center;
+    text-align: center;
+    margin-top: 50px;
 }
