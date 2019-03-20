@@ -37,7 +37,7 @@ $(document).ready(function() {
         counterAttachPower: 10,
     }]
 
-
+var music = new Audio("./assets/audio/matrixaudio.mp3");
 var heroeHealth = "";
 var heroeAttack = "";
 // var heroeCounter = "";
@@ -72,6 +72,7 @@ function reset() {
     $(".right").empty();
     $(".images").show().animate({ opacity: "1"});
     fightWon= 0;
+    // music.trigger('stop');
     // $("#smith,#twins,#sentinel").animate({ opacity: "1" });
     // heroesHealth = "";
     // villainHealth = "";
@@ -144,6 +145,8 @@ $("#sentinel").click(function(){
     $("#smithB").hide();
     $(".attackBtn").show();
 })
+
+$(".attackBtn").click(e => music.play());
 
 $(".attackBtn").click(function(){
     $(".left").text(heroeName + " Health Points: " + parseInt(heroeHealth-=villainCounter));
